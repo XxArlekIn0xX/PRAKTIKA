@@ -38,8 +38,8 @@ public class Game extends JFrame {
             public void mousePressed(MouseEvent e){
                 int x = e.getX();
                 int y = e.getY();
-                float drop_right = drop_left + end.getWidth(null);
-                float drop_bottom = drop_top + end.getHeight(null);
+                float drop_right = drop_left + Phasha.getWidth(null);
+                float drop_bottom = drop_top + Phasha.getHeight(null);
                 boolean is_drop = x >= drop_left  && x <= drop_right && y >=drop_top && y <= drop_bottom;
 
                 if (is_drop){
